@@ -1,32 +1,134 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Global Folk Arts International</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global Folk Arts International</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+    .modal-content {
+      background-color: #fff;
+      margin: 10% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 90%;
+      max-width: 800px;
+      border-radius: 10px;
+    }
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <img src="assets/logo.png" alt="Global Folk Arts Logo" class="logo">
-        <h1>Global Folk Arts International</h1>
-    </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="registration.html">Registration</a>
-        <a href="contact.html">Contact</a>
-        <a href="privacy-policy.html">Privacy Policy</a>
-        <a href="terms.html">Terms & Conditions</a>
-    </nav>
-    <main>
-        <section>
-            <h2>Welcome to Global Folk Arts International</h2>
-            <p>We reunite traditional artforms on a global scale.</p>
-            <a href="registration.html" class="button">Click here to register</a>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Global Folk Arts International</p>
-    </footer>
+  <header>
+    <div class="logo-section">
+      <img src="assets/GFAI-logo.png" alt="GFAI Logo" class="logo" />
+      <h1>Global Folk Arts International</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="event-info">
+      <h2>1st Delhi Art Symposium</h2>
+      <p><strong>Date:</strong> December 10–15, 2025</p>
+      <p><strong>Location:</strong> New Delhi, India</p>
+    </section>
+
+    <section class="registration">
+      <div class="registration-container">
+        <div class="registration-image">
+          <img src="assets/art-exhibition.jpg" alt="Art Exhibition" />
+        </div>
+        <div class="registration-form">
+          <h2>Register Now</h2>
+          <p>Participate in the 1st Delhi Art Symposium. Submit your artwork and secure your place!</p>
+          <form name="registration" method="POST" data-netlify="true" enctype="multipart/form-data">
+            <input type="text" name="name" placeholder="Full Name" required />
+            <input type="email" name="email" placeholder="Email Address" required />
+            <input type="tel" name="whatsapp" placeholder="WhatsApp Number (with country code)" required />
+            <input type="text" name="country" placeholder="Country" required />
+            <label>Upload Art Images (1–3)</label>
+            <input type="file" name="artworks" accept="image/*" multiple required />
+            <input type="text" name="social" placeholder="Social Media Handle" required />
+            <textarea name="requirements" placeholder="Any Special Requirement (e.g., dietary)"></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="policies">
+      <h2>Policies</h2>
+      <ul>
+        <li><a href="#" onclick="document.getElementById('terms-modal').style.display='block'">Terms and Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Cancellation and Refund</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <div id="terms-modal" class="modal">
+    <div class="modal-content">
+      <span onclick="document.getElementById('terms-modal').style.display='none'" class="close">&times;</span>
+      <h2>Terms and Conditions</h2>
+      <ol>
+        <li>Acceptance of Terms: By accessing and using this website, you agree to be bound by these terms and conditions, all applicable laws, and regulations.</li>
+        <li>Event Registration: Participation in the 1st Delhi Art Symposium requires completion of the official registration form and full payment of registration fees.</li>
+        <li>Accuracy of Information: You agree to provide true, accurate, and complete information during registration and understand that false submissions may lead to disqualification.</li>
+        <li>Intellectual Property Rights: All content, including text, logos, graphics, and media, are the intellectual property of Global Folk Arts International unless otherwise stated.</li>
+        <li>Use of Artwork Submissions: By uploading artwork during registration, you grant Global Folk Arts International the right to display, promote, and share your artwork for event-related purposes with proper attribution.</li>
+        <li>Data Privacy and Protection: We collect personal data solely for event purposes and will not share it with third parties without your consent, in accordance with our Privacy Policy.</li>
+        <li>Payment Terms: All payments are to be made in full during registration. Payment gateways are secure and provided via approved providers (e.g., Razorpay or Stripe).</li>
+        <li>Currency and Charges: All fees displayed are in USD ($). International transactions may be subject to additional bank or conversion charges by your financial institution.</li>
+        <li>Cancellation Policy: Once registration is confirmed, cancellation requests will not be entertained after a specified date (to be announced). No refunds after this date.</li>
+        <li>Refund Policy: Refunds (if applicable) will be processed within 15 business days and may be subject to administrative fees. No refunds will be issued after <strong>10th August, 2025</strong>.</li>
+        <li>Changes to Event Details: Global Folk Arts International reserves the right to change the event venue, dates, speakers, or agenda without prior notice due to unforeseen circumstances.</li>
+        <li>Code of Conduct: All participants must conduct themselves respectfully and professionally. Harassment, abuse, or disruptive behavior will result in immediate removal without refund.</li>
+        <li>Third-Party Links: Our website may contain links to third-party websites. We are not responsible for their content or privacy practices.</li>
+        <li>Limitation of Liability: We shall not be liable for any loss or damage, including indirect or consequential losses, resulting from your use of this website or participation in the event.</li>
+        <li>Force Majeure: We are not liable for any failure to perform obligations due to events beyond our reasonable control (natural disasters, pandemics, etc.).</li>
+        <li>User Content Restrictions: You may not upload or submit any unlawful, defamatory, abusive, or copyrighted content without authorization.</li>
+        <li>Photo and Video Consent: By participating, you consent to being photographed or recorded for use in promotional materials related to the symposium.</li>
+        <li>Email Communication: By registering, you agree to receive event-related communication from our official email address: info@globalfolkartsinternational.com.</li>
+        <li>Account Termination: We reserve the right to suspend or terminate access to the site for users who violate these terms.</li>
+        <li>Governing Law: These terms are governed by the laws of India. Disputes arising from these terms will be subject to the jurisdiction of courts in New Delhi.</li>
+      </ol>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Global Folk Arts International. All rights reserved.</p>
+  </footer>
+
+  <script>
+    window.onclick = function(event) {
+      var modal = document.getElementById('terms-modal');
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
 </body>
 </html>
