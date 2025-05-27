@@ -1,52 +1,61 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Global Folk Arts International</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Folk Arts International</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="logo-section">
-      <img src="assets/GFAI-logo.png" alt="GFAI Logo" class="logo" />
-      <h1>Global Folk Arts International</h1>
+    <header>
+        <img src="logo.svg" alt="GFAI Logo" class="logo">
+        <h1>Global Folk Arts International</h1>
+    </header>
+    <main>
+        <section class="intro">
+            <h2>1st Delhi Art Symposium</h2>
+            <p><strong>Date:</strong> 7–12 September 2025<br><strong>Location:</strong> Delhi, India<br><br>
+            The 1st Delhi Art Symposium brings together artists and folk traditions from around the world to celebrate the richness and diversity of cultural heritage. Join us for an immersive experience of workshops, exhibitions, and global collaboration.</p>
+        </section>
+        <section class="register">
+            <div class="register-card">
+                <div>
+                    <h3>Ready to be a part of something global?</h3>
+                    <p>Register now and become part of the artistic movement that celebrates tradition on a global stage. Showcase your work, share your story, and connect with the world.</p>
+                    <a href="https://form.jotform.com/251465948414464" target="_blank" class="btn">Click here to Register</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <a href="#" onclick="openPopup('terms')">Terms & Conditions</a>
+            <a href="#" onclick="openPopup('privacy')">Privacy Policy</a>
+            <a href="#" onclick="openPopup('refund')">Cancellation & Refund</a>
+        </div>
+        <section class="contact">
+            <button class="btn" onclick="openPopup('contact')">Contact Us</button>
+        </section>
+        <p style="margin-top: 20px; font-size: 0.9rem;">© 2025 Global Folk Arts International. All rights reserved.</p>
+    </footer>
+
+    <div id="popup" class="popup">
+        <div class="popup-content" id="popup-content"></div>
+        <button onclick="closePopup()">Close</button>
     </div>
-  </header>
 
-  <main>
-    <section class="event-info">
-      <h2>1st Delhi Art Symposium</h2>
-      <p><strong>Date:</strong> December 10–15, 2025</p>
-      <p><strong>Location:</strong> New Delhi, India</p>
-      <p>Join us in celebrating the heritage of global folk arts with artists from across the world. Experience workshops, exhibitions, and cultural exchange like never before.</p>
-    </section>
+    <div id="contact-popup" class="popup">
+        <h3>Contact Us</h3>
+        <form>
+            <input type="text" placeholder="Your Name" required><br>
+            <input type="email" placeholder="Your Email" required><br>
+            <textarea placeholder="Your Message" required></textarea><br>
+            <button type="submit">Send</button>
+        </form>
+        <button onclick="closePopup()">Close</button>
+    </div>
 
-    <section class="registration">
-      <div class="registration-container">
-        <div class="registration-image">
-          <img src="assets/hw6shh8urw-art-galleries-6-g3w4z.webp" alt="Art Exhibition" />
-        </div>
-        <div class="registration-form">
-          <h2>Register Now</h2>
-          <p>Participate in the 1st Delhi Art Symposium. Submit your artwork and secure your place!</p>
-          <a href="registration.html" class="register-button">Click Here to Register</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="policies">
-      <h2>Policies</h2>
-      <ul>
-        <li><a href="terms.html">Terms and Conditions</a></li>
-        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-        <li><a href="cancellation-refund.html">Cancellation and Refund</a></li>
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Global Folk Arts International. All rights reserved.</p>
-  </footer>
+    <script src="script.js"></script>
 </body>
 </html>

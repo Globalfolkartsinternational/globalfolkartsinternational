@@ -1,0 +1,122 @@
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    color: #333;
+}
+header {
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+.logo {
+    height: 60px;
+    display: block;
+    margin: 0 auto 10px;
+}
+h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+.intro {
+    padding: 2rem;
+    text-align: center;
+}
+.register {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.register-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    display: flex;
+    gap: 2rem;
+}
+.register-card img {
+    height: 100px;
+}
+.btn {
+    background: goldenrod;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+}
+footer {
+    padding: 2rem;
+    background: #222;
+    color: #fff;
+    text-align: center;
+}
+.footer-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: underline;
+}
+.contact form {
+    margin-top: 1rem;
+}
+.contact input, .contact textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    border: none;
+}
+.contact button {
+    background: goldenrod;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    background: #fff;
+    padding: 2rem;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    z-index: 999;
+}
+
+#contact-popup {
+    display: none;
+    position: fixed;
+    top: 15%;
+    left: 25%;
+    width: 50%;
+    background: white;
+    padding: 2rem;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    z-index: 1000;
+    border-radius: 16px;
+    text-align: center;
+}
+#contact-popup input,
+#contact-popup textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+#contact-popup button {
+    background: goldenrod;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+}
