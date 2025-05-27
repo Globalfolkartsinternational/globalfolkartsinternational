@@ -1,0 +1,29 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background: #f4f4f4;
+}
+header, nav, footer {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+.logo {
+    width: 100px;
+    height: auto;
+}
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: teal;
+    color: white;
+    text-decoration: none;
+}

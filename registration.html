@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+</head>
+<body>
+    <h1>Artist Registration Form</h1>
+    <form name="registration" method="POST" data-netlify="true" enctype="multipart/form-data">
+        <label>Name: <input type="text" name="name" required></label><br>
+        <label>Email ID: <input type="email" name="email" required></label><br>
+        <label>WhatsApp Number (with country code): <input type="text" name="whatsapp" required></label><br>
+        <label>Country: <input type="text" name="country" required></label><br>
+        <label>Upload 1–3 Art Images: <input type="file" name="art_images" multiple required></label><br>
+        <label>Social Media Handle: <input type="text" name="social" required></label><br>
+        <label>Special Requirements (e.g., dietary): <textarea name="requirements"></textarea></label><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
