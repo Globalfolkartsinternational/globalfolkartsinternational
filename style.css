@@ -168,3 +168,70 @@ footer {
     color: #444;
     font-weight: bold;
 }
+
+.countdown-block {
+  background: #222;
+  border-radius: 12px;
+  padding: 20px 30px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  text-align: center;
+}
+.countdown-value {
+  font-size: 3em;
+  font-weight: bold;
+  color: #00ffcc;
+}
+.countdown-label {
+  font-size: 1.2em;
+  margin-top: 5px;
+  color: #ccc;
+}
+.faq-item {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+.faq-question {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px 0;
+  width: 100%;
+  text-align: left;
+  transition: color 0.3s ease;
+}
+.faq-question:hover {
+  color: #0077cc;
+}
+.faq-answer {
+  display: none;
+  padding: 10px 0;
+  font-size: 1rem;
+  color: #333;
+  animation: fadeIn 0.5s ease;
+}
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@media screen and (max-width: 768px) {
+  #countdown {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .countdown-block {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .countdown-value {
+    font-size: 2.5em;
+  }
+  .faq-question {
+    font-size: 1rem;
+  }
+  .faq-answer {
+    font-size: 0.95rem;
+  }
+}
