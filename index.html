@@ -25,7 +25,14 @@
             <p><strong>Date:</strong> 7–12 September 2025<br><strong>Location:</strong> Delhi, India<br><br>
             The 1st Delhi Art Symposium brings together artists and folk traditions from around the world to celebrate the richness and diversity of cultural heritage. Join us for an immersive experience of workshops, exhibitions, and global collaboration.</p>
         </section>
-        <section class="register">
+        
+<section style="display: flex; justify-content: space-around; padding: 40px 0; background: #f7f7f7;">
+    <button class="btn" onclick="openPopup('schedule')">Workshop Schedule</button>
+    <button class="btn" onclick="openPopup('benefits')">Participation Benefits</button>
+    <button class="btn">Location</button>
+</section>
+
+<section class="register">
             <div class="register-card">
                 <div>
                     <h3>Ready to be a part of something global?</h3>
@@ -63,6 +70,70 @@
         <button onclick="closeContactPopup()">Close</button>
     </div>
 
-    <script src="script.js"></script>
+    
+<div id="schedule-popup" class="popup">
+    <span class="close-btn" onclick="closePopup('schedule')">×</span>
+    <div class="popup-content">
+        <h3>Workshop Schedule</h3>
+        <p><strong>Day 1 – Arrival & Welcome</strong><br>
+        - Airport transfers from Indira Gandhi International Airport to the designated hotel<br>
+        - Participant registration and check-in<br>
+        - Meet & Greet session with fellow delegates and artists<br>
+        - Welcome Dinner</p>
+        <p><strong>Day 2 – Delhi Cultural Tour</strong><br>
+        - Guided tour of Delhi’s iconic historical sites and premier art galleries<br>
+        - Traditional Indian lunch at a heritage venue<br>
+        - Evening at leisure for participants</p>
+        <p><strong>Day 3 – Traditional Art Workshop</strong><br>
+        - Hands-on workshop with a master artist<br>
+        - Sessions on history and techniques<br>
+        - Certificates awarded</p>
+        <p><strong>Day 4 – Creative Symposium</strong><br>
+        - Artwork creation and collaboration<br>
+        - Creative exchange and curation</p>
+        <p><strong>Day 5 – Exhibition & Valedictory</strong><br>
+        - Public Exhibition<br>
+        - Evaluation and Awards:<br>
+        🥇 Gold Medals (Top 3)<br>
+        🥈 Silver Medals (All Participants)<br>
+        - Participation Certificates<br>
+        - Cultural evening and Dinner</p>
+        <p><strong>Day 6 – Departure</strong><br>
+        - Farewell breakfast and airport transfers</p>
+    </div>
+</div>
+
+<div id="benefits-popup" class="popup">
+    <span class="close-btn" onclick="closePopup('benefits')">×</span>
+    <div class="popup-content">
+        <h3>Participation Benefits</h3>
+        <p><strong>🖼️ Artistic Recognition</strong><br>
+        - Public exhibition in Delhi<br>
+        - Expert panel review<br>
+        - Gold and Silver Medals</p>
+        <p><strong>📜 Official Acknowledgments</strong><br>
+        - Certificate of Participation<br>
+        - Valedictory Ceremony</p>
+        <p><strong>🧠 Skill Development</strong><br>
+        - Traditional art workshop<br>
+        - Creative and cultural sessions</p>
+        <p><strong>🌍 Cultural Exchange</strong><br>
+        - Collaboration with global artists<br>
+        - Cross-cultural idea exchange</p>
+        <p><strong>🎨 Creative Opportunity</strong><br>
+        - Create new artwork with provided materials<br>
+        - Professional exhibition</p>
+        <p><strong>🍽️ Hospitality & Comfort</strong><br>
+        - Free accommodation & meals<br>
+        - Welcome dinner & farewell breakfast<br>
+        - Airport pick-up & drop</p>
+        <p><strong>🏛️ Delhi Cultural Tour</strong><br>
+        - Heritage and art gallery tour</p>
+        <p><strong>🎁 Thoughtful Return Gifts</strong><br>
+        - Exclusive gifts from Global Folk Arts International</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>

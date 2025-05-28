@@ -88,3 +88,10 @@ function closePopup() {
 function closeContactPopup() {
     document.getElementById("contact-popup").style.display = "none";
 }
+
+function openPopup(type) {
+    document.getElementById(type + '-popup').style.display = "block";
+}
+function closePopup(type) {
+    document.getElementById(type + '-popup').style.display = "none";
+}
