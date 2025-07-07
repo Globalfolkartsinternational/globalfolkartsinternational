@@ -1,232 +1,115 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Folk Arts International</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="1st Delhi Art Symposium by Global Folk Arts International - promoting traditional arts, cultural exchange, and collaboration.">
+    <meta name="keywords" content="Art Symposium, Traditional Art, Delhi, Global Folk Arts, Pattachitra Workshop, Cultural Exchange">
+    <meta property="og:title" content="1st Delhi Art Symposium">
+    <meta property="og:description" content="A global celebration of folk and traditional arts in Delhi, October 5–10, 2025.">
+    <meta property="og:image" content="images/banner.jpg">
+    <title>1st Delhi Art Symposium - Global Folk Arts International</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
-    
-
-<header style="display: flex; align-items: center; justify-content: flex-start; gap: 30px; padding: 20px 40px; background: white;">
-    <img src="logo.png" alt="GFAI Logo" style="height: 100px;">
-    <div style="text-align: center; flex-grow: 1;">
-        <h1 style="font-size: 2.5rem; margin: 0; font-weight: 900;">GLOBAL FOLK<br>ARTS INTERNATIONAL</h1>
-        <p style="margin: 5px 0 0; font-size: 1rem; font-weight: 500;">Where folk arts meet the global artists</p>
-    </div>
-</header>
-
-
-    <main>
-        <section class="intro">
-            <h2>1st Delhi Art Symposium</h2>
-            <p><strong>Date:</strong> 7–12 October 2025<br><strong>Location:</strong> Delhi, India<br><br>
-The 1st Delhi Art Symposium is a unique initiative by Global Folk Arts International that brings together folk artists, contemporary creators, and cultural enthusiasts from across the globe. This 5-day event in Delhi will host interactive workshops, live demonstrations, expert panels, and curated exhibitions. The symposium focuses on promoting traditional art forms, fostering international collaboration, and creating sustainable opportunities for artisans in the global art economy. Whether you are an artist, collector, or culture lover — this event is designed to inspire, connect, and create.</p>
-        </section>
-
-<section class="photo-gallery">
-  <h2>Gallery: Glimpses of Our Past Events</h2>
-  <div class="slider-wrapper">
-    <button class="nav prev">&#10094;</button>
-    <div class="slider-track">
-      <!-- Photos will be inserted dynamically -->
-    </div>
-    <button class="nav next">&#10095;</button>
-  </div>
-</section>
-
-
-        
-
-<section id="countdown-section" style="background: linear-gradient(to right, #111, #333); color: #fff; padding: 60px 20px;">
-  <h2 style="text-align: center; font-size: 2.5em; margin-bottom: 30px;">Countdown to the 1st Delhi Art Symposium</h2>
-  <div id="countdown" style="display: flex; justify-content: center; gap: 50px;">
-    <div class="countdown-block">
-      <div class="countdown-value" id="days">00</div>
-      <div class="countdown-label">Days</div>
-    </div>
-    <div class="countdown-block">
-      <div class="countdown-value" id="hours">00</div>
-      <div class="countdown-label">Hours</div>
-    </div>
-    <div class="countdown-block">
-      <div class="countdown-value" id="minutes">00</div>
-      <div class="countdown-label">Minutes</div>
-    </div>
-    <div class="countdown-block">
-      <div class="countdown-value" id="seconds">00</div>
-      <div class="countdown-label">Seconds</div>
-    </div>
-  </div>
-</section>
-
-<section style="display: flex; justify-content: space-around; padding: 40px 0; background: #f7f7f7;">
-    <button class="btn" onclick="openPopup('schedule')">Workshop Schedule</button>
-    <button class="btn" onclick="openPopup('benefits')">Participation Benefits</button>
-    <button class="btn">Location</button>
-</section>
-
-<section class="register">
-            <div class="register-card">
-                <div>
-                    <h3>Ready to be a part of something global?</h3>
-                    <p>Register now and become part of the artistic movement that celebrates tradition on a global stage. Showcase your work, share your story, and connect with the world.</p>
-                    <a href="https://form.jotform.com/251465948414464" target="_blank" class="btn">Click here to Register</a>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="footer-links">
-            <a href="#" onclick="openPopup('terms')">Terms & Conditions</a>
-            <a href="#" onclick="openPopup('privacy')">Privacy Policy</a>
-            <a href="#" onclick="openPopup('refund')">Cancellation & Refund</a>
+    <header>
+        <div class="logo">Global Folk Arts International</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#past">Past Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="banner">
+            <h1>1st Delhi Art Symposium</h1>
+            <p>5–10 October 2025 | Delhi, India</p>
+            <div id="countdown"></div>
+            <a href="brochure.pdf" class="btn">Download Brochure</a>
+            <a href="#register" class="btn highlight">Quick Register</a>
         </div>
-        <section class="contact">
-            <button class="btn" onclick="openPopup('contact')">Contact Us</button>
-        </section>
-        <p style="margin-top: 20px; font-size: 0.9rem;">© 2025 Global Folk Arts International. All rights reserved.</p>
-    
-<section style="padding: 40px; background: #fff;">
-  <h2 class="section-heading">FAQ</h2>
-  <div class="faq">
-    <div class="faq-item">
-      <button class="faq-question">1. Do I need to bring my own art materials? ▼</button>
-      <div class="faq-answer"><p>Yes, artists are required to bring their own paints and brushes. However, canvases and easels will be provided by the organizers during the workshop and creative symposium.</p></div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question">2. Can international artists participate in the event? ▼</button>
-      <div class="faq-answer"><p>Absolutely. The 1st Delhi Art Symposium is open to artists from around the world. We warmly welcome international participants to foster cultural exchange and creative collaboration.</p></div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question">3. Will accommodation and meals be covered? ▼</button>
-      <div class="faq-answer"><p>Yes, all registered participants will receive complimentary accommodation, daily meals (breakfast, lunch, dinner), and airport pick-up and drop-off throughout the event duration.</p></div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question">4. Is there an age or qualification requirement to attend? ▼</button>
-      <div class="faq-answer"><p>There is no academic requirement, but participants must be 18 years or older and actively practicing or interested in visual/fine arts.</p></div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question">5. What type of return gifts will be provided? ▼</button>
-      <div class="faq-answer"><p>Participants will receive a customized return gift inspired by traditional Indian artforms, exclusively designed for the 1st Delhi Art Symposium.</p></div>
-    </div>
-  </div>
-</section>
-
-</footer>
-
-    <div id="popup" class="popup"><span class="close-btn" onclick="closePopup()">×</span>
-        <div class="popup-content" id="popup-content"></div>
-        
-    </div>
-
-    <div id="contact-popup" class="popup"><span class="close-btn" onclick="closeContactPopup()">×</span>
-        <h3>Contact Us</h3>
-        <form>
-            <input type="text" placeholder="Your Name" required><br>
-            <input type="email" placeholder="Your Email" required><br>
-            <textarea placeholder="Your Message" required></textarea><br>
-            <button type="submit">Send</button>
-        </form>
-        <button onclick="closeContactPopup()">Close</button>
-    </div>
-
-    
-<div id="schedule-popup" class="popup">
-    <span class="close-btn" onclick="closePopup('schedule')">×</span>
-    <div class="popup-content">
-        <h3>Workshop Schedule</h3>
-        <p><strong>Day 1 – Arrival & Welcome</strong><br>
-        - Airport transfers from Indira Gandhi International Airport to the designated hotel<br>
-        - Participant registration and check-in<br>
-        - Meet & Greet session with fellow delegates and artists<br>
-        - Welcome Dinner</p>
-        <p><strong>Day 2 – Delhi Cultural Tour</strong><br>
-        - Guided tour of Delhi’s iconic historical sites and premier art galleries<br>
-        - Traditional Indian lunch at a heritage venue<br>
-        - Evening at leisure for participants</p>
-        <p><strong>Day 3 – Traditional Art Workshop</strong><br>
-        - Hands-on workshop with a master artist<br>
-        - Sessions on history and techniques<br>
-        - Certificates awarded</p>
-        <p><strong>Day 4 – Creative Symposium</strong><br>
-        - Artwork creation and collaboration<br>
-        - Creative exchange and curation</p>
-        <p><strong>Day 5 – Exhibition & Valedictory</strong><br>
-        - Public Exhibition<br>
-        - Evaluation and Awards:<br>
-        🥇 Gold Medals (Top 3)<br>
-        🥈 Silver Medals (All Participants)<br>
-        - Participation Certificates<br>
-        - Cultural evening and Dinner</p>
-        <p><strong>Day 6 – Departure</strong><br>
-        - Farewell breakfast and airport transfers</p>
-    </div>
-</div>
-
-<div id="benefits-popup" class="popup">
-    <span class="close-btn" onclick="closePopup('benefits')">×</span>
-    <div class="popup-content">
-        <h3>Participation Benefits</h3>
-        <p><strong>🖼️ Artistic Recognition</strong><br>
-        - Public exhibition in Delhi<br>
-        - Expert panel review<br>
-        - Gold and Silver Medals</p>
-        <p><strong>📜 Official Acknowledgments</strong><br>
-        - Certificate of Participation<br>
-        - Valedictory Ceremony</p>
-        <p><strong>🧠 Skill Development</strong><br>
-        - Traditional art workshop<br>
-        - Creative and cultural sessions</p>
-        <p><strong>🌍 Cultural Exchange</strong><br>
-        - Collaboration with global artists<br>
-        - Cross-cultural idea exchange</p>
-        <p><strong>🎨 Creative Opportunity</strong><br>
-        - Create new artwork with provided materials<br>
-        - Professional exhibition</p>
-        <p><strong>🍽️ Hospitality & Comfort</strong><br>
-        - Free accommodation & meals<br>
-        - Welcome dinner & farewell breakfast<br>
-        - Airport pick-up & drop</p>
-        <p><strong>🏛️ Delhi Cultural Tour</strong><br>
-        - Heritage and art gallery tour</p>
-        <p><strong>🎁 Thoughtful Return Gifts</strong><br>
-        - Exclusive gifts from Global Folk Arts International</p>
-    </div>
-</div>
-
-
-<div id="terms-popup" class="popup">
-  <span class="close-btn" onclick="closePopup('terms')">×</span>
-  <div class="popup-content">
-    <h3>Terms & Conditions</h3>
+    </section>
+    <section id="about">
+    <h2>About the Symposium</h2>
+    <p>The <strong>1st Delhi Art Symposium</strong>, hosted by <strong>Global Folk Arts International</strong>, is a landmark initiative to celebrate and revive traditional and indigenous art forms from across the globe. This international gathering of artists, artisans, scholars, and enthusiasts fosters meaningful cultural exchange, artistic collaboration, and preservation of endangered art forms.</p>
+    <p>This year, the symposium focuses on blending tradition with innovation. Attendees will experience:</p>
     <ul>
-      <li><strong>Acceptance of Terms:</strong> By accessing and using this website, you agree to be bound by these terms.</li>
-      <li><strong>Event Registration:</strong> Participation requires completing the official form and paying fees.</li>
-      <li><strong>Intellectual Property:</strong> Content is the property of Global Folk Arts International unless otherwise stated.</li>
-      <li><strong>Conduct:</strong> Participants are expected to follow ethical guidelines and respect all cultures represented.</li>
+        <li>🎨 <strong>Workshops</strong> led by renowned master artisans from across India and abroad</li>
+        <li>🧠 <strong>Panel discussions</strong> with art historians, researchers, and curators</li>
+        <li>🧵 <strong>Live demonstrations</strong> of intricate craft-making techniques</li>
+        <li>🎭 <strong>Cultural performances</strong> showcasing the folk traditions of multiple countries</li>
+        <li>🖼️ <strong>Interactive exhibitions</strong> featuring curated pieces and multimedia displays</li>
     </ul>
-  </div>
+    <p>One of the highlight workshops of this year’s symposium is on the traditional <strong>Pattachitra art form</strong>, conducted by expert artisans. Participants will not only learn the history and techniques of Pattachitra, but also create their own artwork under guided supervision.</p>
+    <p>This symposium is a step forward in creating a global network of folk artists and nurturing a new generation of cultural ambassadors.</p>
+</section>
+    <section id="schedule">
+        <h2>Event Schedule</h2>
+        <ul>
+            <li>Inauguration</li>
+            <li>Workshops</li>
+            <li>Panel Discussions</li>
+            <li>Live Artist Demos</li>
+            <li>Cultural Performances</li>
+            <li>Exhibition Walkthrough</li>
+        </ul>
+        <a href="documents/schedule.pdf" class="btn">Download Full Schedule (PDF)</a><br><a href="documents/benefits.pdf" class="btn">Download Benefits (PDF)</a>
+    </section>
+    <section id="register">
+        <h2>Register</h2>
+        <div class="fee-table">
+            <h3>Indian Participants</h3>
+            <table><tr><th>Category</th><th>Fees</th></tr><tr><td>Below 18</td><td>TBD</td></tr><tr><td>Above 18</td><td>TBD</td></tr></table>
+            <h3>International Participants</h3>
+            <table><tr><th>Category</th><th>Fees</th></tr><tr><td>Below 18</td><td>TBD</td></tr><tr><td>Above 18</td><td>TBD</td></tr></table>
+        </div>
+        <a href="register.html" class="btn highlight">Register Now</a>
+    </section>
+<section id="past">
+<h2>Past Events</h2>
+<div class="gallery">
+    <img src="images/photo1.jpg" alt="Photo 1">
+    <img src="images/photo2.jpg" alt="Photo 2">
+    <img src="images/photo3.jpg" alt="Photo 3">
+    <img src="images/photo4.jpg" alt="Photo 4">
+    <img src="images/photo5.jpg" alt="Photo 5">
+    <img src="images/photo6.jpg" alt="Photo 6">
+    <img src="images/photo7.jpg" alt="Photo 7">
+    <img src="images/photo8.jpg" alt="Photo 8">
+    <img src="images/photo9.jpg" alt="Photo 9">
+    <img src="images/photo10.jpg" alt="Photo 10">
+    <img src="images/photo11.jpg" alt="Photo 11">
+    <img src="images/photo12.jpg" alt="Photo 12">
+    <img src="images/photo13.jpg" alt="Photo 13">
+    <img src="images/photo14.jpg" alt="Photo 14">
+    <img src="images/photo15.jpg" alt="Photo 15">
+    <img src="images/photo16.jpg" alt="Photo 16">
+    <img src="images/photo17.jpg" alt="Photo 17">
+    <img src="images/photo18.jpg" alt="Photo 18">
+    <img src="images/photo19.jpg" alt="Photo 19">
+    <img src="images/photo20.jpg" alt="Photo 20">
+    <img src="images/photo21.jpg" alt="Photo 21">
+    <img src="images/photo22.jpg" alt="Photo 22">
+    <img src="images/photo23.jpg" alt="Photo 23">
+    <img src="images/photo24.jpg" alt="Photo 24">
+    <img src="images/photo25.jpg" alt="Photo 25">
+    <img src="images/photo26.jpg" alt="Photo 26">
+    <img src="images/photo27.jpg" alt="Photo 27">
 </div>
-
-<div id="privacy-popup" class="popup">
-  <span class="close-btn" onclick="closePopup('privacy')">×</span>
-  <div class="popup-content">
-    <h3>Privacy Policy</h3>
-    <p>We value your privacy. Your personal data will be stored securely and used only for registration, communication, and logistics of the event. We do not share your data with third parties.</p>
-  </div>
-</div>
-
-<div id="refund-popup" class="popup">
-  <span class="close-btn" onclick="closePopup('refund')">×</span>
-  <div class="popup-content">
-    <h3>Cancellation & Refund Policy</h3>
-    <p>Cancellations made before 1st September 2025 will receive a 75% refund. No refunds after 1st September due to logistical commitments. All refund requests must be submitted in writing to the organizing committee.</p>
-  </div>
-</div>
-
-<script src="script.js"></script>
+</section>    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>For any queries or visa help, participants will receive official documents and invoices after registering to aid with the visa process.</p>
+        <p><a href="terms.html">Terms & Conditions</a> | <a href="privacy.html">Privacy Policy</a> | <a href="refund.html">Cancellation & Refund</a></p>
+        <p>Need help? <a href="mailto:info@globalfolkartsinternational.com" class="btn">Contact Us</a></p>
+    </section>
+    <footer>
+        <p>&copy; 2025 Global Folk Arts International. All rights reserved.</p>
+    </footer>
 </body>
 </html>
