@@ -238,3 +238,6 @@ footer {
 
 
 .section-heading { text-align: center; font-size: 2.5rem; margin-bottom: 30px; font-weight: bold; color: black; }
+
+/* Fix FAQ heading color */
+.faq h2, .faq-title { color: #f2f2f2 !important; }
