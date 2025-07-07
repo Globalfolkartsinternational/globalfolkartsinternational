@@ -235,3 +235,6 @@ footer {
     font-size: 0.95rem;
   }
 }
+
+
+.section-heading { text-align: center; font-size: 2.5rem; margin-bottom: 30px; font-weight: bold; color: black; }
