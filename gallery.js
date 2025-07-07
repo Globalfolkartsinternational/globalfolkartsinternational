@@ -4,7 +4,7 @@ const prevBtn = document.querySelector('.nav.prev');
 const nextBtn = document.querySelector('.nav.next');
 
 // Insert all photos dynamically
-const photoCount = 12;
+const photoCount = 30;
 for (let i = 1; i <= photoCount; i++) {
   const img = document.createElement('img');
   img.src = `gallery/photo${i}.jpg`;
